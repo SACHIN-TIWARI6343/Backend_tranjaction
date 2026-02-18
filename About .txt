@@ -1,0 +1,1 @@
+App.js=>server  k instanse ko create karna  and server k config ko karna 
