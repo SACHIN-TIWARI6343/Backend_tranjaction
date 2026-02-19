@@ -29,7 +29,7 @@ dotenv.config(); // Load environment variables from .env file
 
         // to save token in cookie
         res.cookie("token",token,{
-            httpOnly:true, // stop to access token from broser 
+            httpOnly:true, // stop to access token from browser 
             secure:true, // only send cookie over HTTPS
             sameSite: "strict" // prevent   CSRF  attacks by only sending cookie for same site requests
         }) 
