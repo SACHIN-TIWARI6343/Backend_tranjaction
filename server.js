@@ -7,10 +7,10 @@ import connectDB from './src/config/db.js'; // Import the database connection fu
 const port = process.env.PORT ; // Use the PORT environment variable or default to 3000
 
 
-
-
+// Start the server and listen on the specified port
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
-} );
+});
 
 connectDB(); // Connect to the database before starting the server 
+

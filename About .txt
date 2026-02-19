@@ -1,1 +1,1 @@
-App.js=>server  k instanse ko create karna  and server k config ko karna 
+App.js=>server  k instanse ko create karna  and server k config ko karna (which middliware you use as well as which api you use  )
