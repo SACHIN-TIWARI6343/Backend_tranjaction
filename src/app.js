@@ -9,4 +9,5 @@ app.use(cookieParser()); // middleware to parse cookies
 app.use("/api/auth",authRoutes); // use authentication routes
 
 
+
 export default app; // export the app instance for use in other files

@@ -20,9 +20,8 @@ const userSchema = new mongoose.Schema({
         type:String,    
         required:[true,'Password is required to create a user '],
         trim:true,
-        lowercase:true,
         minlegth:[6,'Password must be at least 6 characters long'],
-        select:false,
+        select:true, //  mongodb will be allow to acess password filed without explicit asking you 
 
     }
     
