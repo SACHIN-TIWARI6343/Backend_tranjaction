@@ -67,8 +67,10 @@ const userLoginController = async (req,res) => {
                 message:"User does not exist"
             })
         }
-        // Compare password
+
+        // Compare password 
         const isPasswordValid = await bcrypt.compare(password,user.password); // Compare the provided password with the hashed password in the database
+
         if(!isPasswordValid){
             return res.status(400).json({
                 success:false,
@@ -80,7 +82,7 @@ const userLoginController = async (req,res) => {
         
         // to save token in cookie
         res.cookie("token",token,{
-            httpOnly:true, // stop to access token from broser 
+            httpOnly:true, // stop to access token from browser 
             secure:true, // only send cookie over HTTPS
             sameSite: "strict" // prevent   CSRF  attacks by only sending cookie for same site requests
         }) 
@@ -103,9 +105,13 @@ const userLoginController = async (req,res) => {
     }
 }
 
+
+
+
 export default {
     userRegisterController,
-    userLoginController
+    userLoginController,
+   
 }
 
 
